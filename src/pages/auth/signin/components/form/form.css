@@ -1,0 +1,15 @@
+.formAuth {
+    max-width: 500px;
+    width: 100%;
+    height: auto;
+    border: 1px solid rgb(109, 160, 218);
+    border-radius: 10px;
+    padding: 20px 40px;
+   
+}
+
+
+#loginInput,
+#passwordInput {
+    background-color: rgb(118, 183, 236);
+}

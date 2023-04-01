@@ -2,6 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Signin from "./pages/auth/signin/Signin";
+import 'bootstrap/dist/css/bootstrap.min.css';
 import './index.css'
 const router = createBrowserRouter([
   {
