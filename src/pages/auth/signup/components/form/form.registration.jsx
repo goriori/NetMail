@@ -2,22 +2,48 @@ import React, { useState } from "react";
 import "./form.css";
 import { Form, Button } from "react-bootstrap";
 
-const FormAuth = () => {
+const FormRegistration = () => {
+  const [name , setName] = useState('')
+  const [surname,setSurname] = useState('')
   const [login, setLogin] = useState("");
   const [password, setPassword] = useState("");
 
-  const authorization = (event) => {
+  const registration = (event) => {
     event.preventDefault();
     console.log(login, password);
+    setName('')
+    setSurname('')
     setLogin("");
     setPassword("");
   };
 
 
   return (
-    <div className="formAuth">
-      <h2>Sign In</h2>
+    <div className="formRegistration">
+      <h2>Sign Up</h2>
       <Form className="mt-4">
+      <div className="name mb-3  ">
+          <Form.Label>Name</Form.Label>
+          <Form.Control
+            type="text"
+            aria-describedby="nameInputMessage"
+            id="loginInput"
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+          />
+          <Form.Text id="nameInputMessage"> Name required field  </Form.Text>
+        </div>
+        <div className="surname mb-3  ">
+          <Form.Label>Surname</Form.Label>
+          <Form.Control
+            type="text"
+            aria-describedby="NameInputMessage"
+            id="loginInput"
+            value={surname}
+            onChange={(e) => setSurname(e.target.value)}
+          />
+          <Form.Text id="NameInputMessage"> Surname required field </Form.Text>
+        </div>
         <div className="login mb-3  ">
           <Form.Label>Login</Form.Label>
           <Form.Control
@@ -46,10 +72,11 @@ const FormAuth = () => {
         <div className="sendForm">
           <Button
             variant="outline-primary"
-            onClick={ authorization}
+            onClick={ registration}
             type="submit"
+          
           >
-            Sign In
+            Sign Up
           </Button>
         </div>
       </Form>
@@ -57,4 +84,4 @@ const FormAuth = () => {
   );
 };
 
-export default FormAuth;
+export default FormRegistration;
