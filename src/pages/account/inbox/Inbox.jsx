@@ -1,17 +1,26 @@
 import React from "react";
 import Navbar from "../components/navbar/navbar";
-import './inbox.css'
+import { Form } from "react-bootstrap";
+
+
+import Actions from "./components/actions/actions";
+import "./inbox.css";
 const Inbox = () => {
   return (
-    <div className="inbox d-flex">
-      <div className="navigate">
-        <Navbar />
-      </div>
-     <div className="content">
-        <div className="mails">
-            mailsawdawdawdwadwad
+    <div className="inbox p-5">
+      <div className="top_panel">TopPanel</div>
+      <div className="content">
+        <div className="navigate">
+          <Navbar />
         </div>
-     </div>
+        <div className="box_mails p-5 ms-5">
+          <div className="settings">
+            <Actions/>
+            <hr />
+          </div>
+          <div className="letters">letters</div>
+        </div>
+      </div>
     </div>
   );
 };

@@ -9,7 +9,7 @@ const Navbar = () => {
     return navigate('/')
   };
   return (
-    <div className="navbar">
+    <div className="navbar p-5">
       <div className="links">
         <div>
           <Link to={"/user/inbox"}>Inbox</Link>

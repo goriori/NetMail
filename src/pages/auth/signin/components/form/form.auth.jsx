@@ -1,8 +1,10 @@
 import React, { useState } from "react";
 import "./form.css";
 import { Form, Button } from "react-bootstrap";
-
+import {useNavigate} from 'react-router-dom'
 const FormAuth = () => {
+
+  let navigate = useNavigate()
   const [login, setLogin] = useState("");
   const [password, setPassword] = useState("");
 
@@ -11,6 +13,7 @@ const FormAuth = () => {
     console.log(login, password);
     setLogin("");
     setPassword("");
+    navigate('/user/inbox')
   };
 
 

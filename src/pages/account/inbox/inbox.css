@@ -1,5 +1,14 @@
-.mails {
-    padding: 30px;
+
+
+.box_mails {
+    max-width: 1500px;
+    width: 100%;
+   
     border:1px solid white;
     border-radius: 10px;
+}
+
+.content {
+    display: flex;
+    
 }
