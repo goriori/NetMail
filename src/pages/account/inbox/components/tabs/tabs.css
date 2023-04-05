@@ -1,0 +1,12 @@
+.tabs > div {
+    max-width: 300px;
+    width: 100%;
+    transition: 0.3s;
+}
+
+.tabs > div:hover {
+    background-color: rgba(128, 128, 128, 0.486);
+    cursor: pointer;
+    transition: 0.3s;
+
+}

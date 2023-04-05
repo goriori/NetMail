@@ -1,0 +1,11 @@
+.progress_disk {
+    max-width: 150px;
+}
+
+.progress {
+    height: 5px;
+}
+
+.description_disk {
+    font-size: 13px;
+}

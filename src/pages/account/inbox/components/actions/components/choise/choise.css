@@ -1,0 +1,28 @@
+.choice_update,
+.choice_more {
+
+    transition: 0.3s;
+
+
+}
+
+.choice_update :hover,
+.choice_more :hover {
+    cursor: pointer;
+    background-color: rgba(128, 128, 128, 0.603);
+    border-radius: 5px;
+    transition: 0.3s;
+
+
+}
+
+.choice_more {
+    position: relative;
+}
+
+.drop_more {
+    transition: 0.3s;
+    position: absolute;
+    border-radius: 10px;
+    background-color: rgba(165, 165, 165, 0.699);
+}

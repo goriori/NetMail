@@ -12,3 +12,19 @@
     display: flex;
     
 }
+
+hr{
+    margin:0px;
+}
+
+.letters {
+    max-height: 500px;
+    overflow: auto;
+}
+
+.description_disk {
+    font-size: 13px;
+}
+.user_active_info {
+    max-width: 200px;
+}

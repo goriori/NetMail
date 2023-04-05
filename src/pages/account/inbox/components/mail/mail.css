@@ -1,0 +1,51 @@
+.mail {
+    transition: 0.2s;
+    border-bottom: 1px solid rgb(97, 96, 96);
+}
+
+.centerData {
+    max-width: 1000px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+}
+
+.mail:hover {
+    cursor: pointer;
+    transition: 0.2s;
+    border-bottom: 1px solid rgb(240, 240, 240);
+    box-shadow: 0px 1px 5px 0.2px;
+}
+
+.rightData {
+
+    position: relative;
+    max-width: 60px;
+    width: 100%;
+}
+
+ .material-symbols-outlined{
+  font-variation-settings:
+  'FILL' 1,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48
+}
+
+.icon_action_letter {
+    position: absolute;
+    top: -10px;
+    right: 0;
+
+
+}
+
+.icon_action_letter>span {
+
+    cursor: pointer;
+}
+
+.icon_action_letter>span:hover {
+    background-color: rgba(128, 128, 128, 0.425);
+}

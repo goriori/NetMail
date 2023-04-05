@@ -1,0 +1,27 @@
+
+
+.pagination_letter {
+    max-width: 100px;
+    width: 100%;
+    border-radius: 10px;
+
+}
+
+.pagination_letter:hover {
+    cursor:default;
+
+}
+
+
+.pagination_skip > span {
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.3s;
+
+}
+
+.pagination_skip > span:hover {
+    transition: 0.3s;
+    background-color: rgba(165, 165, 165, 0.699);
+
+}
