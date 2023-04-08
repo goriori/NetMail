@@ -20,9 +20,11 @@
     position: relative;
 }
 
-.drop_more {
+.choice_more >.drop_more {
+    width: 200px;
+    
     transition: 0.3s;
     position: absolute;
     border-radius: 10px;
-    background-color: rgba(165, 165, 165, 0.699);
+    background-color: rgba(165, 165, 165, 0.993);
 }

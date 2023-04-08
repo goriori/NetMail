@@ -10,3 +10,7 @@
     transition: 0.3s;
 
 }
+
+.active {
+    background-color: rgba(128, 128, 128, 0.486);
+}

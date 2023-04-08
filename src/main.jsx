@@ -16,6 +16,7 @@ import Inbox from "./pages/account/inbox/Inbox";
 import Sent from "./pages/account/sent/Sent";
 import Snoozed from "./pages/account/snoozed/Snoozed";
 import Starred from "./pages/account/starred/Starred";
+import Information from "./pages/information/information";
 
 const router = createBrowserRouter([
   {
@@ -42,6 +43,10 @@ const router = createBrowserRouter([
     path: "/user/starred",
     Component:Starred
   },
+  {
+    path:'/information',
+    Component:Information
+  }
 ]);
 
 ReactDOM.createRoot(document.getElementById("root")).render(
