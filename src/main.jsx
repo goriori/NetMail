@@ -17,7 +17,7 @@ import Sent from "./pages/account/sent/Sent";
 import Snoozed from "./pages/account/snoozed/Snoozed";
 import Starred from "./pages/account/starred/Starred";
 import Information from "./pages/information/information";
-
+import Letter from "./pages/account/letter/Letter";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -46,6 +46,10 @@ const router = createBrowserRouter([
   {
     path:'/information',
     Component:Information
+  },
+  {
+    path:'/user/letter',
+    Component:Letter
   }
 ]);
 

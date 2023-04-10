@@ -3,7 +3,12 @@
     padding: 0px;
     margin: 0px;
 }
-
+a {
+    color: white;
+    transition: 0.3s;
+}
+a:hover {
+}
 body {
     width: 100vw;
     height: auto;

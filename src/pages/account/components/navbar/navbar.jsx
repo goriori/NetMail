@@ -11,20 +11,20 @@ const Navbar = () => {
   return (
     <div className="navbar p-5">
       <div className="links">
-        <div>
+        <div >
           <Link to={"/user/inbox"}>Inbox</Link>
         </div>
-        <div>
+        <div className="mt-2">
           <Link to={"/user/starred"}>Starred</Link>
         </div>
-        <div>
+        <div className="mt-2">
           <Link to={"/user/snoozed"}>Snoozed</Link>
         </div>
-        <div>
+        <div className="mt-2">
           <Link to={"/user/sent"}>Sent</Link>
         </div>
       </div>
-      <div className="logout ">
+      <div className="logout mt-4 ">
         <Button onClick={logout}>Logout</Button>
       </div>
     </div>

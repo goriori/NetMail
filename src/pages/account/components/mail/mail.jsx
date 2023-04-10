@@ -1,5 +1,6 @@
 import React, { useState, useRef, useEffect } from "react";
 import { Form } from "react-bootstrap";
+import { Link } from "react-router-dom";
 import "./mail.css";
 const Mail = ({ activeAll }) => {
   const mail = useRef();
@@ -26,15 +27,18 @@ const Mail = ({ activeAll }) => {
     >
       <div className="leftData d-flex   ">
         <Form.Check type="checkbox" ref={chek} />
-        <span className="favorite material-symbols-outlined ms-3 " >star</span>
+        <span className="favorite material-symbols-outlined ms-3 ">star</span>
         <strong className="ms-3">Title Letter</strong>
       </div>
 
-      <div className="centerData">
-        Что важно для трудоустройства AI-разработчика Требования к
-        AI-разработчикам отличаются от требований в других сферах
-        программирования. Рассказываем, чего хотят работодатели.
-      </div>
+      <Link to={"/user/letter"}>
+        <div className="centerData">
+          Что важно для трудоустройства AI-разработчика Требования к
+          AI-разработчикам отличаются от требований в других сферах
+          программирования. Рассказываем, чего хотят работодатели.
+        </div>
+      </Link>
+
       <div className="rightData ">
         {visibility === false ? (
           <div className="time_letter ">12:33</div>
