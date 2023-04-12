@@ -1,12 +1,21 @@
 import React, { useState } from "react";
-import "./form.css";
-import { Form, Button } from "react-bootstrap";
+import { Form } from "react-bootstrap";
+import {useNavigate} from 'react-router-dom'
 
+
+
+import ButtonMain from "../../../../../ui/buttons/button.main";
+import "./form.css";
 const FormRegistration = () => {
+
+
+  let navigate = useNavigate()
   const [name , setName] = useState('')
   const [surname,setSurname] = useState('')
   const [login, setLogin] = useState("");
   const [password, setPassword] = useState("");
+  const [loading, setLoading] = useState(false)
+
 
   const registration = (event) => {
     event.preventDefault();
@@ -15,6 +24,11 @@ const FormRegistration = () => {
     setSurname('')
     setLogin("");
     setPassword("");
+    setLoading(!loading)
+    setTimeout(() => {
+      setLoading(!loading)
+      navigate('/')
+    }, 1000);
   };
 
 
@@ -45,7 +59,7 @@ const FormRegistration = () => {
           <Form.Text id="NameInputMessage"> Surname required field </Form.Text>
         </div>
         <div className="login mb-3  ">
-          <Form.Label>Login</Form.Label>
+          <Form.Label>Email</Form.Label>
           <Form.Control
             type="text"
             aria-describedby="loginInputMessage"
@@ -53,7 +67,7 @@ const FormRegistration = () => {
             value={login}
             onChange={(e) => setLogin(e.target.value)}
           />
-          <Form.Text id="loginInputMessage"> Login must be unique </Form.Text>
+          <Form.Text id="loginInputMessage"> Email must be unique </Form.Text>
         </div>
         <div className="password mb-3">
           <Form.Label>Password</Form.Label>
@@ -70,14 +84,7 @@ const FormRegistration = () => {
           </Form.Text>
         </div>
         <div className="sendForm">
-          <Button
-            variant="outline-primary"
-            onClick={ registration}
-            type="submit"
-          
-          >
-            Sign Up
-          </Button>
+          <ButtonMain text={'Sign In'} loading={loading} onClick={registration} />
         </div>
       </Form>
     </div>

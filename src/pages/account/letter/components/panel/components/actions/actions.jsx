@@ -1,21 +1,25 @@
-import React from "react";
+import React, { useState } from "react";
+import MoreVert from "../../../../../../../ui/icons/more_vert/more.vert";
+import "./actions.css";
 
 const Actions = () => {
+  
+
   return (
-    <div className="left d-flex">
+    <div className="left d-flex align-items-center justify-content-center">
       <div className="arrow_back">
-        <span class="material-symbols-outlined">arrow_back</span>
+        <span className="material-symbols-outlined p-1">arrow_back</span>
       </div>
-      <div className="actions ms-4">
-        <span class="material-symbols-outlined ">archive</span>
-        <span class="material-symbols-outlined ms-2">info</span>
-        <span class="material-symbols-outlined ms-2">delete</span>
-        <span class="material-symbols-outlined ms-2">mail</span>
-        <span class="material-symbols-outlined ms-2">schedule</span>
-        <span class="material-symbols-outlined ms-2">add_task</span>
-        <span class="material-symbols-outlined ms-2">drive_file_move</span>
-        <span class="material-symbols-outlined ms-2">label</span>
-        <span className="material-symbols-outlined ms-2">more_vert</span>
+      <div className="actions_letter ms-4 d-flex align-items-center justify-content-center">
+        <span className="material-symbols-outlined p-1" >archive</span>
+        <span className="material-symbols-outlined ms-2 p-1">info</span>
+        <span className="material-symbols-outlined ms-2 p-1">delete</span>
+        <span className="material-symbols-outlined ms-2 p-1">mail</span>
+        <span className="material-symbols-outlined ms-2 p-1">schedule</span>
+        <span className="material-symbols-outlined ms-2 p-1">add_task</span>
+        <span className="material-symbols-outlined ms-2 p-1">drive_file_move</span>
+        <span className="material-symbols-outlined ms-2 p-1">label</span>
+        <MoreVert/>
       </div>
     </div>
   );

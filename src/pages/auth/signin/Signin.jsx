@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import './signin.css'
 const Signin = () => {
   return (
-    <div className="signin ">
+    <div className="signin mt-5 ">
       <div className=" form d-flex justify-content-center  ">
         <FormAuth />
       </div>

@@ -27,9 +27,8 @@ a {
     transition: 0.3s;
 }
 
-.links>div:hover {
-    transition: 0.3s;
 
-    background-color: rgba(128, 128, 128, 0.568);
 
+.logout {
+    margin:0 auto;
 }

@@ -4,7 +4,7 @@ import {Link} from 'react-router-dom'
 import "./signup.css";
 const Signup = () => {
   return (
-    <div className="signup">
+    <div className="signup mt-5">
       <div className=" form d-flex justify-content-center  ">
         <FormRegistration />
       </div>

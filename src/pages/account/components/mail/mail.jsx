@@ -1,10 +1,14 @@
 import React, { useState, useRef, useEffect } from "react";
 import { Form } from "react-bootstrap";
 import { Link } from "react-router-dom";
+import Star from "../../../../ui/icons/star/star";
 import "./mail.css";
 const Mail = ({ activeAll }) => {
   const mail = useRef();
   const [visibility, setVisibility] = useState(false);
+  
+
+  
 
   const chek = useRef();
 
@@ -27,7 +31,8 @@ const Mail = ({ activeAll }) => {
     >
       <div className="leftData d-flex   ">
         <Form.Check type="checkbox" ref={chek} />
-        <span className="favorite material-symbols-outlined ms-3 ">star</span>
+        <Star/>
+
         <strong className="ms-3">Title Letter</strong>
       </div>
 

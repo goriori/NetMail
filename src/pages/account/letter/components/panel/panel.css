@@ -1,0 +1,9 @@
+.move > span {
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.move > span:hover {
+    background-color: gray;
+    transition: 0.3s;
+}

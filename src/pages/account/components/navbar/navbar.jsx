@@ -1,17 +1,24 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
-import { Button } from "react-bootstrap";
+
+import ButtonMain from "../../../../ui/buttons/button.main";
 import "./navbar.css";
 const Navbar = () => {
-    let navigate  = useNavigate()
+  const [loading, setLoading] = useState(false);
+  let navigate = useNavigate();
   const logout = () => {
     console.log("logout");
-    return navigate('/')
+    setLoading(!loading);
+    setTimeout(() => {
+      setLoading(!loading);
+      navigate("/");
+    }, 1000);
   };
+
   return (
     <div className="navbar p-5">
       <div className="links">
-        <div >
+        <div>
           <Link to={"/user/inbox"}>Inbox</Link>
         </div>
         <div className="mt-2">
@@ -25,7 +32,7 @@ const Navbar = () => {
         </div>
       </div>
       <div className="logout mt-4 ">
-        <Button onClick={logout}>Logout</Button>
+        <ButtonMain text={"Log Out"} loading={loading} onClick={logout} />
       </div>
     </div>
   );
