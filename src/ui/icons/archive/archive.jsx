@@ -3,7 +3,7 @@ import React from "react";
 
 const Archive = () => {
     return (
-        <span className="material-symbols-outlined ms-3 ">archive</span>
+        <span className="material-symbols-outlined ms-2 p-1 ">archive</span>
     )
 }
 

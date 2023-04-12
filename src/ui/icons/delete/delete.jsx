@@ -1,8 +1,8 @@
 import React from "react";
 
-const Delete = () => {
+const Delete = ({handler}) => {
     return (
-        <span className="material-symbols-outlined">delete</span>
+        <span className="material-symbols-outlined ms-2 p-1" onClick={handler}>delete</span>
     )
 }
 

@@ -16,7 +16,7 @@ const Letter = () => {
         </div>
         <div className="box_mails p-5 ms-5">
           <Panel />
-          <div className="letters">
+          <div className="letter">
             <h3>Новые вакансии</h3>
             <div className="action d-flex justify-content-between mt-4">
               <Author />
@@ -41,14 +41,9 @@ const Letter = () => {
               </div>
             </div>
             <div className="letter_footer">
-              {!replyActive ? (
-                <div className=" d-flex justify-content-start align-items-center mt-4">
-                  <Button className="rounded-pill" onClick={()=> setReplyActive(true)}>Ответить</Button>
-                  <Button className="ms-3 rounded-pill">Переслать</Button>
-                </div>
-              ) : (
+              
                 <ReplyMail />
-              )}
+              
             </div>
           </div>
         </div>
