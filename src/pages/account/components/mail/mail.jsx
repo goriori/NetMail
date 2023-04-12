@@ -3,6 +3,10 @@ import { Form } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import Star from "../../../../ui/icons/star/star";
 import "./mail.css";
+import Delete from "../../../../ui/icons/delete/delete";
+import Archive from "../../../../ui/icons/archive/archive";
+import MailIcon from "../../../../ui/icons/mail/mail";
+import Schedule from "../../../../ui/icons/schedule/schedule";
 const Mail = ({ activeAll }) => {
   const mail = useRef();
   const [visibility, setVisibility] = useState(false);
@@ -49,10 +53,10 @@ const Mail = ({ activeAll }) => {
           <div className="time_letter ">12:33</div>
         ) : (
           <div className="icon_action_letter d-flex  ">
-            <span className="material-symbols-outlined">delete</span>
-            <span className="material-symbols-outlined ms-3 ">archive</span>
-            <span className="material-symbols-outlined ms-3">mail</span>
-            <span className="material-symbols-outlined ms-3">schedule</span>
+            <Delete/>
+            <Archive/>
+            <MailIcon/>
+            <Schedule/>
           </div>
         )}
       </div>

@@ -1,15 +1,14 @@
 import React, { useState } from "react";
 import { Form, ButtonGroup, Button } from "react-bootstrap";
 import "./choise.css";
+import Reload from "../../../../../../../ui/icons/reload/reload";
 
 const Choise = ({ activeAll, onActiveAll }) => {
   console.log(activeAll);
 
   const [dropdown, setDropdown] = useState(false);
 
-  const updatePage = () => {
-    location.reload();
-  };
+  
 
   let drop_ifno = (
     <div className="drop_more p-2">
@@ -41,9 +40,7 @@ const Choise = ({ activeAll, onActiveAll }) => {
         />
       </div>
       <div className="choice_update ms-3 ">
-        <span className="material-symbols-outlined" onClick={updatePage}>
-          update
-        </span>
+        <Reload/>
       </div>
       <div className="choice_more ms-3">
         <span
